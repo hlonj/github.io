@@ -197,7 +197,8 @@ main {
 .index-page {
   position: relative;
   &:after {
-    content: "--------------------------------------------------------------------------------";
+    content: "***";
+	line-height: 40px;
     position: absolute;
     margin-top: 1em;
     width: 100px;
