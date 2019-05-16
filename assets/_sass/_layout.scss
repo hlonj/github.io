@@ -198,6 +198,7 @@ main {
   position: relative;
   &:after {
     content: "***";
+	//효과는 없었다
 	line-height: 40px;
     position: absolute;
     margin-top: 1em;
