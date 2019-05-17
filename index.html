@@ -6,11 +6,19 @@ title: "hlonj"
 summary: "main page"
 ---
 
-{% for post in site.posts limit: 5 %}
-{{ page }}
-{{ total_posts }} 
+{% for post in site.posts %}
+<!--{% for post in site.posts limit: 5 %}-->
+<!--{{ page }}-->
+<!--{{ total_posts }} -->
   <article class="index-page">
     <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
     {{ post.excerpt }}
   </article>
 {% endfor %}
+<div class="pagination">
+	{% if paginator.previous_page %}
+		<a href="{{ paginator.previous_page_path }}" class="previous"> previous_page </a>
+	{% else %}
+		<span class ="previous"> previous_page </span>
+	{% endif %}
+</div>
