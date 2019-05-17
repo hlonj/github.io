@@ -19,7 +19,7 @@ twitter_username: hlonj
 github_username: hlonj 
 disqus_username:
 paginate : 5
-paginate_path : "/page:num/"
+paginate_path : "/index/page:num/"
 
 # Build settings
 markdown: kramdown
