@@ -7,15 +7,21 @@ summary: "main page"
 ---
 
 {% for post in site.posts %}
-  <article class="index-page">
-    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-    {{ post.excerpt }}
-  </article>
+<article class="index-page">
+	<h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+	{{ post.excerpt }}
+</article>
 {% endfor %}
 <div class="pagination">
 	{% if paginator.previous_page %}
-		<a href="{{ paginator.previous_page_path }}" class="previous"> previous_page </a>
+	<a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
 	{% else %}
-		<span class ="previous"> previous_page </span>
+	<span class="previous">Previous</span>
+	{% endif %}
+	<span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+	{% if paginator.next_page %}
+	<a href="{{ paginator.next_page_path }}" class="next">Next</a>
+	{% else %}
+	<span class="next ">Next</span>
 	{% endif %}
 </div>
