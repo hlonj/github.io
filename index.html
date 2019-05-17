@@ -12,7 +12,7 @@ summary: "main page"
 	{{ post.excerpt }}
 </article>
 {% endfor %}
-<div class="pagination" align="center">
+<div class="pagination" >
 	{% if paginator.previous_page %}
 	<a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
 	{% else %}
