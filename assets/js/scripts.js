@@ -6,7 +6,7 @@
   /* variables */
   var shadow = document.getElementById('shadow');
   var images = document.querySelectorAll('.blog-content a img');
-  var imageHeight = window.innerHeight - 20;
+  var imageHeight = window.innerHeight - 100;
 
   /* events */
   shadow.addEventListener('click', resetShadow, false);
