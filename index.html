@@ -6,7 +6,7 @@ title: "hlonj"
 summary: "main page"
 ---
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 <article class="index-page">
 	<h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
 	{{ post.excerpt }}
